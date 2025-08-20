@@ -66,7 +66,7 @@ function Admin() {
         user: res.data.admin,
       });
 
-      navigate("/admin/Main"); // go to dashboard
+      navigate("/admin/Main"); 
     } else {
       alert(res.data.error);
     }

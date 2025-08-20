@@ -282,13 +282,9 @@ const sendWhatsAppMessage = () => {
 }
 const Container = styled.div`
   width: 100%;
-//   height: 80px;
-   background-color:#f3f4f6;
-//   display: flex;
+background-color:#f3f4f6;
   align-items: center;
   
-
-//   justify-content:space-around;
   h1{
     margin-top:40px;
     font-size:2.5rem;
@@ -340,18 +336,16 @@ const FormContainer = styled.form`
 
   width: 40%;
   height:600px;
-//  display:grid;
     margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-//   flex: 0.7;
-  
+
     margin-bottom:30px;
 
    padding-left: 15px;
    padding-right: 15px;
-//  gap:2rem;
+
  justify-content: center;
  flex-wrap: wrap;
 
@@ -360,7 +354,6 @@ const FormContainer = styled.form`
   h2{
 
     text-align:center;
-    //   padding-top:10px;
      
         font-size: 2rem;
     font-weight:bold;
@@ -372,11 +365,10 @@ const FormContainer = styled.form`
   h3 {
     font-size: 25px;
     font-weight: 400;
-    //  line-height: 33px;
     align-self: flex-start;
      padding-left:50px;
       padding-top:-20px;
-    // margin-bottom: 10px;
+   
   }
     p{
      padding-left:50px;
@@ -391,9 +383,8 @@ const FormContainer = styled.form`
      
      @media only screen and (max-width: 767px) {
    width: 70%;
-    // justify-content: space-around;
      display:inline-block;
-    //   padding:20px;
+   
        margin-left:10%;
       height:auto;
        h2{
@@ -422,13 +413,11 @@ const InputContainer = styled.div`
     font-family: serif;
     padding:4px;
      font-size: 1.2rem;
-    // font-weight:bold;
     width:70%;
     height: 33px;
    margin:10px;
     border-radius: 5px;
     border: 1px solid gray;
-    // margin-top: 5px;
    margin-left:30px;
     &:hover {
        border: 1px solid orange;
@@ -481,7 +470,6 @@ const Icon = styled.div`
 img{
 display:inline;
 margin-left:50px;
-// margin-bottom:0px;
 cursor: pointer;
 width:50px;
 background-color: #eff2f3ff;
@@ -489,4 +477,4 @@ border:3px solid #f8fbfcff ;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     border-radius: 1rem;
 }
-`
+`;

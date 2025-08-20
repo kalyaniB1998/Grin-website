@@ -25,10 +25,7 @@ function Header() {
 }
 
 const Nav = styled.nav`
-//   background-color: #121212;
-//   color: white;
-//   padding-top: 12px 24px;
-//   display: flex;
+
    justify-content: space-between;
    align-items: center;
   position: sticky;
@@ -36,14 +33,10 @@ const Nav = styled.nav`
   z-index: 1000; 
  width: 100%;
   height: 70px;
-    // background-color:#353535;
+   
      background: #48474d;
-    // background: #48474d
-    //  background:  #272727ff;
   display: flex;
-//   position: sticky;    
-//   top: 0;              
-//   z-index:auto;
+
 
 `;
 
@@ -54,8 +47,7 @@ const Logo = styled.div`
        margin-top:10px;
       @media (max-width: 768px) {
       width: 300px;
-      // margin-top:10px;
-      //  margin-left:10px;
+      
     }
   }
 `;
@@ -74,7 +66,7 @@ const Hamburger = styled.div`
 const Menu = styled.div`
   display: flex;
   gap: 25px;
-//   margin-top:25px; 
+
   margin-right:25px;
 a {
     text-decoration: none;
@@ -95,7 +87,7 @@ a {
     width:100%;
     top: 60px;
     
-    // left: 20px;
+    
        background: linear-gradient(to bottom, #121212, #353535, #5c5b5b);
     flex-direction: column;
      padding: 10px;
@@ -105,7 +97,7 @@ a {
     gap: 8px;
     z-index: 999;
     a{
-    // color: #edf0f4ff ;
+   
   font-family:serif;
     }
        

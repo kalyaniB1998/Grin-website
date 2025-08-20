@@ -116,7 +116,7 @@ const Image = styled.img`
    width: 500px;
    height: 600px;
    object-fit: cover;
-  //  margin-left:20px;
+ 
 `;
 
 const Info = styled.div`
