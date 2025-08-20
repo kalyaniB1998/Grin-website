@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import axios from "../../axios"; // Make sure this points to your backend
+import axios from "../../axios"; 
 import { useParams, useNavigate } from "react-router-dom";
 
 function EditProduct() {
-  const { id } = useParams(); // Product ID from URL
+  const { id } = useParams(); 
   const navigate = useNavigate();
 
   const [product, setProduct] = useState({
@@ -17,20 +17,17 @@ function EditProduct() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch the product by ID
+   
     const fetchProduct = async () => {
       try {
         const res = await axios.get('/products/get');
-        // const res = await axios.get(`/products/update/${id}`);
-
-        const data = res.data;
+ const data = res.data;
 
         setProduct({
           title: data.title,
           price: data.price,
           rating: data.rating,
           imageURL: data.imageURL,
-          //  imageURL: `/uploads/${data.image}`, 
           image: null,
         });
         setLoading(false);
@@ -139,7 +136,7 @@ function EditProduct() {
   );
 }
 
-// --- STYLES ---
+
 const containerStyle = {
   padding: "40px",
   maxWidth: "500px",

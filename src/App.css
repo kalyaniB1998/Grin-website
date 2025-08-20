@@ -31,12 +31,6 @@ color:#049b0b;
   color: #00E8F7;
   
 }
-/* @media (max-width: 700px) {
-  .hero-title{
-    font-size:2rem;
-  }
-  
-} */
 
 .hero-subtitle {
   font-size: 1.25rem;
@@ -44,11 +38,11 @@ color:#049b0b;
   text-align: center;
 }
 .hero-section {
-  /* background: linear-gradient(to right, #2563eb, #22c55e);*/ 
+  
    background: linear-gradient(to bottom,#121212 , #353535,#5c5b5b);
   color: white;
   text-align: center;
-  /* padding-top: 10px; */
+
   padding-bottom: 10px;
 width: 100%;
 position: sticky;
@@ -104,14 +98,14 @@ position: sticky;
   align-items:start;
    width: 100%;
 
-  /* margin-bottom: 2%; */
+
 }
  
 .site-logo {
  margin-top:-2%;
  height: 200px;
  width: 700px;
- /* padding-right: 30%; */
+
  margin-inline-start:25%;
  align-items: left;
 
@@ -119,9 +113,9 @@ position: sticky;
 @media (max-width: 700px) {
   .site-logo {
      margin-inline-start:10%;
-/* max-width: 70%; */
+
 width: 400px;
-/* margin-top: 20px; */
+
 height: fit-content;
 position:sticky;
 top: 0;
@@ -147,14 +141,7 @@ top: 0;
   text-align: center;
   
 }
-/* General resets and typography */
-/* body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: rgb(255, 255, 255);
-} */
+
  p{
   font-size: 1.3rem;
  font-family:  Arial, sans-serif;
@@ -182,7 +169,7 @@ line-height: 2rem;
 }
 
 
-/* Hero Section */
+
 .cta-button {
   padding: 0.75rem 1.5rem;
   border-radius: 2rem;
@@ -201,8 +188,7 @@ line-height: 2rem;
   background-color: #1e3a8a;
   color: white;
 }
-/* 
-Welcome Section */
+
  .welcome-section {
   padding: 1rem 1.5rem;
   max-width: 960px;
@@ -218,7 +204,7 @@ Welcome Section */
   
 } 
 
-/* Offer Section */
+
 .offer-section {
   background-color:#F3F4F6;
   padding: 4rem 1.5rem;
@@ -250,7 +236,7 @@ Welcome Section */
   margin-bottom: 0.5rem;
 }
 
-/* Why Choose Us */
+
 .why-choose-section {
   padding: 4rem 1.5rem;
   max-width: 800px;
@@ -272,7 +258,7 @@ Welcome Section */
   margin-left: 30%;
 }
 
-/* Contact Section */
+
 .home-section {
   background-color:white;
   padding: 4rem 1.5rem;
@@ -297,7 +283,7 @@ Welcome Section */
   margin: 0.5rem;
 }
 
-/* Footer */
+
 .footer {
   background: linear-gradient(to bottom,#121212 , #353535,#5c5b5b);
   color: white;
@@ -310,18 +296,7 @@ Welcome Section */
   top: 0;
 
 }
-/* .header{
-  background-color: #1f2937;
-  color: white;
-  text-align:start end;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  position: sticky;
-  z-index: auto;
-  top: 0;
-  max-width: 100%;
-  min-width: auto;
-} */
+
 
 footer a {
   color: #93c5fd;
@@ -332,15 +307,12 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-/* Header styles */
+
 .site-header {
-  /*background-color: #330148;*/
   background: linear-gradient(to right,#121212 , #272727,#4a4949);
   color: white;
   text-align: center;
    display: flex;
-  /*align-items: center;
-  justify-content: center;*/
   color: white;
   
 } 
@@ -368,12 +340,11 @@ max-width: 90%;
   
 }
 
-/* About Us Section */
 .about-section {
   padding: 1rem 1.5rem;
   margin: auto;
   text-align: center;
-  /* position: sticky; */
+
   
 }
 
@@ -402,7 +373,7 @@ max-width: 100%;text-align: left;
   
 }
 
-/* Vision & Mission Section */
+
 .vision-mission-section {
   display: flex;
   flex-wrap: wrap;
@@ -438,7 +409,7 @@ max-width: 100%;text-align: left;
   color:#03a00b;
 }
 
-/* Core Values Section */
+
 .core-values-section {
   padding: 4rem 1.5rem;
   background-color: white;
@@ -482,8 +453,6 @@ margin-top: -10%;
 .image-button-row {
   display: flex;
 
-  /* spacing between image and button */
-  /* center horizontally */
 }
 
 .inline-image {
@@ -510,12 +479,12 @@ align-items: end;
   color:#00E8F7;
   text-decoration:underline ;
 }
-/* Base styles */
+
 
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  /* background-color: #f9f9f9; */
+ 
   color: #1f2937;
 }
 body {
@@ -534,12 +503,6 @@ body {
   color: white;
 }
 
-/* .logo-container {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-   max-width: 100%;
-} */
 
 
 .company-name {
@@ -547,15 +510,6 @@ body {
   font-weight: bold;
 }
 
-/*.contact-section {
-  padding: 2rem;
-  text-align: center;
-}*/
-
-/*.section-title {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}*/
 
 .contact-description {
   max-width: 100%;
@@ -607,7 +561,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* ✅ Responsive */
+
 @media (max-width: 768px) {
   .contact-form-container {
     flex-direction: column;
@@ -638,7 +592,7 @@ footer a:hover {
    max-width: 100%;
   min-width: auto;
 }
-/* product */
+
 
 
 .products-page {
@@ -781,7 +735,7 @@ margin:2%;
      font-size:1rem;
   }
  }
- /* productDetails */
+
  .details-container {
   max-width: 100%;
   width: 90%;
@@ -929,7 +883,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 }
 
-/* Term and condition */
+
 .terms{
   text-align:justify;
   padding-inline-start: 15%;

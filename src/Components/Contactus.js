@@ -1,15 +1,10 @@
 import React,{useState,useEffect} from "react";
-//import { Navigate } from "react-router-dom";
-//import logo from "./images/fulllogo.png";
-//import "./styles.css";
 import Header from "./Header";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-// import { Divider } from "@material-ui/core";
-// import ProductDropdown from "./ProductDropdawn"; // adjust path if needed
 import Footer from "./Footer";
 import axios from "../axios";
-// import { FormContainer, InputContainer, Button } from "./StyledComponents";
+
 
 export default function ContactUsPage() {
  
@@ -27,9 +22,9 @@ export default function ContactUsPage() {
 
     useEffect(() => {
     axios
-      .get("/products/get") // Make sure your backend route is correct
+      .get("/products/get")
       .then((res) => {
-        setProducts(res.data); // Set products to state
+        setProducts(res.data);
       })
       .catch((err) => {
         console.error("Failed to fetch products", err);
@@ -79,7 +74,7 @@ if (message.trim() !== "" && message.trim().length < 10) {
     name,
     contact,
     email,
-  //  title,
+  
     message,
     title: title.join(", "),
   };
@@ -102,7 +97,7 @@ if (message.trim() !== "" && message.trim().length < 10) {
 
 
 const sendWhatsAppMessage = () => {
-    const phoneNumber = "918788449561"; // Your WhatsApp number with country code
+    const phoneNumber = "918788449561"; 
     const fullMessage = `Hello, my name is ${name}. ${message}`;
     const encodedMessage = encodeURIComponent(fullMessage);
 
@@ -205,12 +200,10 @@ const sendWhatsAppMessage = () => {
         left: 30,
         width: "72%",
         backgroundColor: "#fff",
-        // backgroundColor: "#e0f7fa",
         border: "1px solid #ccc",
         maxHeight: "180px",
         overflowY: "auto",
         zIndex: 1000,
-        // boxShadow: "0 2px 5px rgba(0,0,0,0.15)",
         borderRadius: "4px",
        
       }}
@@ -223,10 +216,7 @@ const sendWhatsAppMessage = () => {
     alignItems:"flex-start",
      paddingTop:"2px",
     padding: "1px",
-    // borderBottom: "1px solid #eee",
     cursor: "pointer",
-    // gap: "10px",
-    // fontSize: "14px",
     lineHeight: "1.2",
       textAlign: "left",
     direction: "ltr", 
@@ -261,16 +251,7 @@ const sendWhatsAppMessage = () => {
         </FormContainer>
       </Div>  
         
-  {/* <footer>
-        <p>© 2025<strong className='grin'> GRIN ENERGY</strong>. All rights reserved.</p>
-        <div>
-         <a href="/">Home</a>
-          <a href="/about">About Us</a>
-          <a href="products">Products</a>
-          <a href="aboutUs">Privacy Policy</a>
-        </div>
-      </footer>
-     */}
+ 
      <Footer/>
 
 

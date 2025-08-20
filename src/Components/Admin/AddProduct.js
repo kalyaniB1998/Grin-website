@@ -151,7 +151,6 @@ margin-inline-start:5%;
       width:90%;
     
       margin-inline-start:-30%;
-      // margin: 10%;
       img {
      width: 400px;
      height:100px;

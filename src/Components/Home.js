@@ -4,9 +4,6 @@ import React from "react";
 import { useState } from 'react';
 import axios from '../axios';
 import Footer from './Footer';
-// import Carousel from 'react-bootstrap/Carousel';
-
-
 export default function HomePage() {
   let navigate= useNavigate();
 const [showForm, setShowForm] = useState(false);
@@ -76,7 +73,6 @@ const [contact, setContact] = useState("");
         </div>
       </section>
 
-      {/* Welcome Section */}
       <section className="welcome-section" >
         <h2 className="welcome-title">Welcome to<strong className='grin'> GRIN ENERGY</strong></h2>
         <p style={{textAlign:'start'}}>
@@ -120,7 +116,7 @@ const [contact, setContact] = useState("");
       </section>
 
        
-      {/* Why Choose Us Section */}
+     
       <section className="why-choose-section">
         <h2>Why Choose <strong className='grin'> GRIN ENERGY</strong>?</h2>
 
@@ -190,7 +186,6 @@ const [contact, setContact] = useState("");
       <button type="submit" className="cta-button primary">
         Send Message
       </button>
-      {/* {status && <p style={{ color: "green", fontWeight: "bold" }}>{status}</p>} */}
         {success && <p style={{ color: "green",textAlign:'center' }}>Message sent successfully!</p>}
     </form>
   )}
@@ -201,16 +196,12 @@ const [contact, setContact] = useState("");
         <p >Be part of the electric revolution. Partner with<strong style={{color:'#049b0b'}}> GRIN ENERGY</strong> and drive the world forward — sustainably.</p>
       </div>
 
-      {/* Contact CTA Section */}
       <section className="home-section">
         <h2>Ready to Electrify Your Project?</h2>
         <p>Whether you're an OEM, a startup, or a fleet operator — we're here to help.</p>
         <p>📞 Call Us: +91-8788449561</p>
         <p>📧 Email: info@grinenergy.in</p>
-        {/* <div className="contact-buttons">
-          <button className="cta-button secondary">Contact Us</button>
-          <button className="cta-button primary">Request a Quote</button>
-        </div> */}
+       
       </section>
       
       <Footer/>

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Rating from "@material-ui/lab/Rating";
 import { useStateValue } from "../StateProvider";
-// import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function Card({ id, image, title,description, price, rating }) {
@@ -21,11 +20,7 @@ function Card({ id, image, title,description, price, rating }) {
         price,
         image,
         rating,
-        // powerInput,
-        // powerOuput,
-        // safetyFeature,
-        // userInterface,
-        // envirmentdesign,
+      
       },
     });
    navigate("/contactus");
@@ -45,11 +40,7 @@ function Card({ id, image, title,description, price, rating }) {
           readOnly/>
         <p>{description}</p>
         <p>₹ {price}</p> 
-        {/* <p>{powerInput}</p>
-        <p>{ powerOuput}</p>
-        <p>{safetyFeature}</p>
-        <p>{userInterface}</p>
-        <p>{envirmentdesign}</p> */}
+       
         
         <button onClick={addToBasket}>Enquiry Now</button>
       </Description>

@@ -17,50 +17,28 @@ function Admin() {
      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
-    // Validate email
+  
     if (!emailRegex.test(email)) {
       alert("Please enter a valid email address.");
       return;
     }
 
-    // Validate password
+    
     if (!passwordRegex.test(password)) {
       alert("Password must be at least 8 characters long and include at least one letter and one number.");
       return;
     }
 
-
-  //   axios
-  //     .post("/admins/adminslogin", { email, password })
-  //     .then((res) => {
-  //       if (!res.data.error) {
-  //         dispatch({
-  //           type: "SET_ADMIN",
-  //           user: res.data,
-  //         });
-
-  //         localStorage.setItem("admins", JSON.stringify(res.data));
-
-  //         navigate("/Main");
-  //       } else if (res.data.error) {
-  //         alert(res.data.error);
-  //       }
-  //     })
-  //     .catch((err) => console.warn(err));
-
   axios
   .post("/admins/adminslogin", { email, password })
   .then((res) => {
     if (!res.data.error) {
-      // Save token + admin info separately
      if (res.data.token) {
         localStorage.setItem("token", res.data.token);
       }
       if (res.data.admin) {
         localStorage.setItem("admin", JSON.stringify(res.data.admin));
       }
-
-      // Update Redux state (if you’re using it)
       dispatch({
         type: "SET_ADMIN",
         user: res.data.admin,
@@ -98,8 +76,7 @@ function Admin() {
             type="password"
             placeholder="********"
             onChange={(e) => setPassword(e.target.value)}
-            value={password}
-          />
+            value={password} />
         </InputContainer>
 
         <LoginButton onClick={adminslogin}>Admin Login</LoginButton>

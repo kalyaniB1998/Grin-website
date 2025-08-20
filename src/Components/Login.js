@@ -15,13 +15,11 @@ function Login() {
      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
 
-    // Validate email
     if (!emailRegex.test(email)) {
       alert("Please enter a valid email address.");
       return;
     }
 
-    // Validate password
     if (!passwordRegex.test(password)) {
       alert("Password must be at least 6 characters long and include at least one letter and one number.");
       return;

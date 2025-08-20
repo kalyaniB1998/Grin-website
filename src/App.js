@@ -25,18 +25,15 @@ import AdminSignup from "./Components/Admin/AdminSignup";
 import HeaderA from "./Components/Admin/HeaderA";
 import Navbar from "./Components/Navbar";
 import Main from "./Components/Admin/Main";
-// import AdminLogin from './Components/Admin/AdminLogin';
 import ManageProduct from "./Components/Admin/ManageProduct";
 import AdminHeader from "./Components/Admin/AdminHeader";
 import EditProduct from "./Components/Admin/EditProduct";
 import Enquiry from "./Components/Admin/Enquiry";
-// import Productdetails from "./Components/Productdetails";
 import ProductDetails from "./Components/Productdetails";
 import ProtectedRoute from "./Components/ProtectedRoute";
 import Footer from "./Components/Footer";
 import TandC from  "./Components/TandC";
 import Privacypolicy from "./Components/Privecypolicy";
-// import ImageSlider from "./Components/ImageSlider";
 const promise = loadStripe(
   "pk_test_51KUDBXSE1AGsrDtwyXK8vcHYNkEOofJAP1vV1fRlpZNo93g4o80dZe4IvhAkBXo2ytDciCqqpynwQUXv7plCjezF00G9zyj4sc"
 );
@@ -60,7 +57,7 @@ return (
           <Route path = "/Card" element={<Card/>}/>
           <Route path ="/TandC" element={<TandC/>}/>
           <Route path ="/Privacypolicy" element={<Privacypolicy/>}/>
-          {/* <Route path ="EditProduct" element={<EditProduct/>}/> */}
+        
           
         
         <Route

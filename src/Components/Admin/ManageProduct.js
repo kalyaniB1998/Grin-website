@@ -1,4 +1,4 @@
-// src/pages/ManageProducts.js
+
 import React, { useEffect, useState } from "react";
 import axios from "../../axios";
 import { useNavigate } from "react-router-dom";
@@ -24,7 +24,7 @@ function ManageProduct() {
     if (!window.confirm("Are you sure you want to delete this product?")) return;
     try {
       await axios.delete(`/products/delete/${id}`);
-      fetchProducts(); // Refresh the list
+      fetchProducts(); 
     } catch (err) {
       console.error("Error deleting product:", err);
     }

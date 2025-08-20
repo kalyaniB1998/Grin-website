@@ -7,17 +7,17 @@ const [productCount, setProductCount] = useState(0);
 const [enquiryCount, setEnquiryCount] = useState(0);
 const [orderCount, setOrderCount] = useState(0);
   useEffect(() => {
-    // fetch products
+    
   axios.get("http://localhost:8000/products/count")
 .then((res) => setProductCount(res.data.count))
       .catch((err) => console.error("Error fetching product count:", err));
 
-    // fetch orders
+   
    axios.get("http://localhost:8000/orders/count")
       .then((res) => setOrderCount(res.data.count))
       .catch((err) => console.error("Error fetching order count:", err));
 
-    // fetch enquiry
+    
    axios.get("http://localhost:8000/enquiry/count")
       .then((res) => setEnquiryCount(res.data.count))
       .catch((err) => console.error("Error fetching enquiry count:", err));

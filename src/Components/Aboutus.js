@@ -1,11 +1,8 @@
 import React from "react";
-//import {useNavigate} from 'react-router-dom';
-//import logo from "./assets/logo.jpeg";
-//import "./styles.css";
+
 import Header from "./Header";
 import Footer from "./Footer";
 export default function AboutUsPage() {
-//let navigate= useNavigate();
   return (
     <div className="about-page">
        
@@ -25,7 +22,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* Vision & Mission Section */}
+    
       <div style={{backgroundColor:'#F3F4F6'}}>
       <section className="vision-mission-section">
         <div className="vision-box">
@@ -40,7 +37,7 @@ export default function AboutUsPage() {
       </section>
       
 
-      {/* Core Values */}
+   
     
       <section className="vision-mission-section" >
         <div className="corevalue-box" >
@@ -56,7 +53,7 @@ export default function AboutUsPage() {
        </section>
       </div>
 
-      {/* Footer */}
+    
      <Footer/>
     </div>
   );

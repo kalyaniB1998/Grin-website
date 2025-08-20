@@ -84,8 +84,6 @@ function Payment() {
             <div>
               <p>Card Details</p>
 
-              {/* Card Element */}
-
               <CardElement />
             </div>
           </PaymentContainer>

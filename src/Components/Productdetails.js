@@ -1,6 +1,6 @@
 
 
-// src/Components/ProductDetails.js
+
 import React, { useEffect, useState } from "react";
 import { navigate, useNavigate, useParams } from "react-router-dom";
 import axios from "../axios";
@@ -13,42 +13,19 @@ function ProductDetails() {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    axios.get(`/products/update/${id}`) // your backend GET by ID
+    axios.get(`/products/update/${id}`) 
       .then(res => setProduct(res.data))
       .catch(err => console.error("Error fetching product:", err));
   }, [id]);
-
-  // if (!product) return <p>Loading...</p>;
 
   return (
      <Div>
     <Header/>
     <DetailsContainer>
       
-      {/* <Image src={`http://localhost:8000/uploads/${product.imageURL}`} alt={product.title} />
-      <Info>
-        <h2>{product.title}</h2>
-        <p><strong>Price:</strong> ₹{product.price}</p>
-        <p><strong>Description:</strong> {product.description}</p>
-        <p><strong>Rating:</strong> ⭐ {product.rating}</p>
-        {product?.customFields && (
-  <div className="custom-fields">
-    <h3>Product Specifications:</h3>
-    <ul>
-      {Object.entries(product.customFields).map(([key, value]) => (
-        <li key={key}>
-          <strong>{key}:</strong> {value}
-        </li>
-      ))}
-    </ul>
-  </div>
-)}
-       
-      </Info> */}
-
 
        <div className="details-container"
-      //  style={{ padding: "20px"}}
+    
        >
       {product ? (
         <div>
@@ -57,14 +34,13 @@ function ProductDetails() {
          <Image
             src={`http://localhost:8000${product.imageURL}`}
             alt={product.title}
-              // style={{ width: "300px", height: "auto" }}
           />
           <Info>
           <div className="detailsdiv" >
           <div className="details-info" >
                <h1 className="detailsh1">{product.title}</h1>
                <p><strong style={{marginBottom:"10px"}}>Description:</strong> {product.description}</p>
-          {/* <p><strong>Price:</strong> ₹{product.price}</p> */}
+         
           <p><strong>Rating:</strong> {product.rating}</p>
             </div>
           <button className="Button" style={{ marginLeft:"16%"}} onClick={()=>{navigate("/contactus");}}>Enquiry Now</button>
@@ -72,10 +48,10 @@ function ProductDetails() {
          </Info>
           
 
-          {/* 🔽🔽 Use this to show custom fields 🔽🔽 */}
+          
           {product.customFields && (
              <div className="spec-section"
-            //  style={{ marginTop: "20px", background: "#f5f5f5", padding: "15px", borderRadius: "8px" }}
+           
              >
               <h3>Product Specifications:</h3>
               <div className="spec-grid" >
