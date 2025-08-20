@@ -194,12 +194,7 @@ const [contact, setContact] = useState("");
         {success && <p style={{ color: "green",textAlign:'center' }}>Message sent successfully!</p>}
     </form>
   )}
-
-
-
-       
-       
-      </section>
+</section>
       <div className='aboutusdiv' >
         <a href='/Contactus'
          style={{fontSize:'2rem'}}><strong>Join Us</strong></a>
