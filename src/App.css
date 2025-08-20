@@ -430,7 +430,7 @@ max-width: 880px;
 }
 
 .values-list li::before {
-  /* content: \"✔️ \"; */
+  
   margin-right: 0.5rem;
   color: #037607;
   
