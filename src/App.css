@@ -86,7 +86,9 @@ position: sticky;
   text-align: center;
   position: static;
  }  
- 
+ .homeButton{
+   margin:6px;
+ }
  
 
 }  
@@ -112,7 +114,7 @@ position: sticky;
 }
 @media (max-width: 700px) {
   .site-logo {
-     margin-inline-start:10%;
+     margin-inline-start:8%;
 
 width: 400px;
 
@@ -201,6 +203,14 @@ line-height: 2rem;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  
+}
+@media (max-width: 700px){
+
+  .welcome-title{
+     font-size: 1.5rem;
+
+  }
   
 } 
 

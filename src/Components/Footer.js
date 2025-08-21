@@ -36,7 +36,7 @@ font-size: 1rem;
   a:hover {
   text-decoration: underline;
 }
-    @media only screen and (max-width: 767px){
+    @media only screen and (max-width: 700px){
     a{
     font-size:0.8rem;
     }
